@@ -1,17 +1,46 @@
 {
-  "name": "@arshtiwari/envguard",
+  "name": "@arishtiwari/envguard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Zero-config environment variable validation toolkit with CLI and UI dashboard",
+  "main": "src/index.js",
+  "bin": {
+    "envguard": "src/cli/cli.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "jest --coverage",
+    "server": "node server/server.js",
+    "ui": "cd ui && npm run dev",
+    "prepare": "npm run build",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "environment-variables",
+    "validation",
+    "devops",
+    "cli",
+    "nodejs"
+  ],
+  "author": "Arsh Tiwari <your.email@example.com>",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "fs-extra": "^11.3.0",
     "yargs": "^17.7.2"
-  }
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "supertest": "^6.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arishtiwari/envguard"
+  },
+  "files": [
+    "src/",
+    "server/",
+    "LICENSE",
+    "README.md"
+  ]
 }
