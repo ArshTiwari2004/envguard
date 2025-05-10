@@ -1,3 +1,8 @@
+import React from 'react';
+import { CheckIcon } from '@heroicons/react/solid';
+
+
+
 export default function Pricing() {
     const tiers = [
       { name: 'OSS', price: 'Free', features: ['Basic Validation', 'CLI Tool'] },
