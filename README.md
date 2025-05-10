@@ -15,6 +15,25 @@ A zero-config, framework-agnostic NPM package and UI for validating and document
 
 ---
 
+
+# 🧰 Tech Stack
+
+| Category        | Technologies                               |
+|----------------|--------------------------------------------|
+| Backend/Core    | TypeScript, Node.js                        |
+| Schema Validation | Zod, Custom Schema Generator              |
+| File Parsing    | dotenv, fs-extra                          |
+| CLI             | yargs, commander                          |
+| Frontend (UI)   | React.js, Vite , TailwindCSS      |
+| Testing         | Jest                                      |
+| CI/CD           | GitHub Actions                            |
+
+
+
+
+
+
+
 ## Quick Start
 
 ### 1. Install
