@@ -11,13 +11,11 @@ function App() {
   const [envVars, setEnvVars] = useState([]);
 
   useEffect(() => {
-    // In a real app, you might fetch this from an API endpoint or backend.
-    // For demo, we'll use a static JSON file (public/env-vars.json).
-    fetch('/env-vars.json')
+    fetch('http://localhost:3001/api/env')
       .then(res => res.json())
-      .then(data => setEnvVars(data))
-      .catch(() => setEnvVars([]));
+      .then(data => setEnvVars(data.variables));
   }, []);
+  
 
   return (
     <div className="p-8">
