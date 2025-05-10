@@ -1,5 +1,5 @@
 {
-  "name": "envguard",
+  "name": "@arshtiwari/envguard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "fs-extra": "^11.3.0",
+    "yargs": "^17.7.2"
+  }
 }
