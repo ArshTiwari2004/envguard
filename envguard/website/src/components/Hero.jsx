@@ -146,7 +146,7 @@ DEBUG_MODE=false`
             </a>
             <Button
               variant="outline"
-              className="border-purple-500 text-purple-400 hover:bg-purple-500/20"
+              className="bg-black border-purple-500 text-purple-400 hover:bg-purple-500/20"
               onClick={() => copyToClipboard(installCommand)}
             >
               <Terminal className="mr-2 h-4 w-4" />
@@ -226,7 +226,7 @@ DEBUG_MODE=false`
             <Button
               size="lg"
               variant="outline"
-              className="border-white/20 text-white hover:bg-white/10"
+              className="border-white/20 text-white hover:bg-white/10 bg-black"
               onClick={() => window.open("https://github.com/arishtiwari/envguard", "_blank")}
             >
               <Github className="mr-2 h-4 w-4" />
@@ -261,7 +261,7 @@ DEBUG_MODE=false`
                 <Card className="bg-gray-800/50 border-gray-700 backdrop-blur-sm hover:bg-gray-800/80 transition-colors h-full">
                   <CardHeader>
                     <div className="mb-4">{feature.icon}</div>
-                    <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
+                    <CardTitle className="text-xl font-bold text-white">{feature.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-white/70">{feature.description}</p>
@@ -401,7 +401,9 @@ DEBUG_MODE=false`
           <div className="max-w-4xl mx-auto">
             <Tabs defaultValue="cli" className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-8 bg-gray-800/50">
-                <TabsTrigger value="cli">CLI Usage</TabsTrigger>
+                <TabsTrigger 
+                
+                value="cli">CLI Usage</TabsTrigger>
                 <TabsTrigger value="programmatic">Programmatic API</TabsTrigger>
                 <TabsTrigger value="ui">React UI</TabsTrigger>
               </TabsList>
@@ -409,7 +411,10 @@ DEBUG_MODE=false`
               <TabsContent value="cli" className="mt-0">
                 <Card className="bg-gray-800/50 border-gray-700">
                   <CardHeader>
-                    <CardTitle>CLI Validation</CardTitle>
+                    <CardTitle
+                        className=" text-white font-bold text-lg"
+                    
+                    >CLI Validation</CardTitle>
                     <CardDescription className="text-white/70">
                       Validate your environment variables directly from the command line
                     </CardDescription>
@@ -461,7 +466,9 @@ error Command failed with exit code 1`}
               <TabsContent value="programmatic" className="mt-0">
                 <Card className="bg-gray-800/50 border-gray-700">
                   <CardHeader>
-                    <CardTitle>Programmatic API</CardTitle>
+                    <CardTitle
+                       className=" text-white font-bold text-lg"
+                    >Programmatic API</CardTitle>
                     <CardDescription className="text-white/70">
                       Integrate environment validation directly into your application
                     </CardDescription>
@@ -508,7 +515,9 @@ error Command failed with exit code 1`}
               <TabsContent value="ui" className="mt-0">
                 <Card className="bg-gray-800/50 border-gray-700">
                   <CardHeader>
-                    <CardTitle>React UI Dashboard</CardTitle>
+                    <CardTitle
+                    className=" text-white font-bold text-lg"
+                    >React UI Dashboard</CardTitle>
                     <CardDescription className="text-white/70">
                       Visualize and debug your environment variables with the included UI
                     </CardDescription>
@@ -813,7 +822,7 @@ error Command failed with exit code 1`}
             <Button
               size="lg"
               variant="outline"
-              className="border-white/20 text-white hover:bg-white/10"
+              className="border-white/20 text-white hover:bg-white/10 bg-black"
               onClick={() => window.open("https://github.com/arishtiwari/envguard", "_blank")}
             >
               <Github className="mr-2 h-4 w-4" />
