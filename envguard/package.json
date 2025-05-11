@@ -1,6 +1,6 @@
 {
-  "name": "@arishtiwari/envguard",
-  "version": "1.0.0",
+  "name": "@arshtiwari/envguard",
+  "version": "1.0.1",
   "description": "Zero-config environment variable validation toolkit with CLI and UI dashboard",
   "main": "src/index.js",
   "bin": {
@@ -10,7 +10,6 @@
     "test": "jest --coverage",
     "server": "node server/server.js",
     "ui": "cd ui && npm run dev",
-    "prepare": "npm run build",
     "lint": "eslint ."
   },
   "keywords": [
