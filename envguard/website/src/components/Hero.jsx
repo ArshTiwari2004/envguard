@@ -127,7 +127,7 @@ DEBUG_MODE=false`
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/arishtiwari/envguard"
+              href="https://github.com/ArshTiwari2004/envguard"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
