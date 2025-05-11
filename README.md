@@ -74,20 +74,64 @@ Visit [http://localhost:5173](http://localhost:5173) to view the UI.
 ```bash
 
 envguard/
-├── src/
-│ ├── parser/
-│ ├── schema/
-│ ├── validator/
-│ ├── reporter/
-│ ├── cli/
-│ └── ...
-├── ui/
-│ ├── src/
-│ ├── public/
-│ └── ...
-├── tests/
-├── scripts/
-└── ...
+├── .env.example                # Example env file for validation
+├── .gitignore
+├── README.md                   # Project documentation
+├── package.json
+├── babel.config.js             # Babel config for transpiling (if needed)
+├── jest.config.js              # Jest config for tests
+├── tsconfig.json               # TypeScript config (optional)
+├── LICENSE
+├── dist/                       # Transpiled output for npm (ignored in VCS)
+│   └── ...                     # Compiled JS files
+├── src/                        # Main source code
+│   ├── index.js                # Main entry point (exports runEnvguard)
+│   ├── parser/
+│   │   └── envExampleParser.js
+│   ├── schema/
+│   │   └── schemaGenerator.js
+│   ├── validator/
+│   │   └── validator.js
+│   ├── reporter/
+│   │   └── errorReporter.js
+│   ├── cli/
+│   │   └── cli.js              # CLI entry point
+│   ├── utils/
+│   │   └── helpers.js
+│   └── types/
+│       └── index.d.ts          # Type definitions
+├── server/                     # Backend server for live UI (optional)
+│   └── server.js
+├── scripts/                    # Utility scripts (e.g., generate .env.example)
+│   └── generateEnvExample.js
+├── tests/                      # Jest test files
+│   ├── parser.test.js
+│   ├── schema.test.js
+│   ├── validator.test.js
+│   └── cli.test.js
+├── ui/                         # React UI dashboard (dev/optional)
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   └── components/
+│   │       └── EnvTable.jsx
+│   ├── public/
+│   │   ├── index.html
+│   │   └── env-vars.json       # (for demo, replaced by API in prod)
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── website/                    # Landing page (for npm promotion)
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── components/
+│   │       ├── Hero.jsx
+│   │       └── Pricing.jsx
+│   ├── public/
+│   │   └── index.html
+│   ├── tailwind.config.js
+│   └── vite.config.js
 
 ```
 
