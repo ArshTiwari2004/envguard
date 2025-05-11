@@ -147,7 +147,7 @@ DEBUG_MODE=false`
             <Button
               variant="outline"
               className="bg-black border-purple-500 text-purple-400 hover:bg-purple-500/20"
-              onClick={() => copyToClipboard(installCommand)}
+              onClick={() => {window.open("https://www.npmjs.com/package/@arshtiwari/envguard", "_blank")}}
             >
               <Terminal className="mr-2 h-4 w-4" />
               Install
@@ -227,7 +227,7 @@ DEBUG_MODE=false`
               size="lg"
               variant="outline"
               className="border-white/20 text-white hover:bg-white/10 bg-black"
-              onClick={() => window.open("https://github.com/arishtiwari/envguard", "_blank")}
+              onClick={() => window.open("https://github.com/ArshTiwari2004/envguard", "_blank")}
             >
               <Github className="mr-2 h-4 w-4" />
               Star on GitHub
@@ -673,7 +673,7 @@ error Command failed with exit code 1`}
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-500 flex-shrink-0">
                 <img
-                  src="/placeholder.svg?height=128&width=128"
+                  src="arshtiwari.jpeg"
                   alt="Arsh Tiwari"
                   className="w-full h-full object-cover"
                 />
@@ -681,7 +681,7 @@ error Command failed with exit code 1`}
               <div>
                 <h3 className="text-2xl font-bold mb-2">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
-                    About the Author
+                    About the Dev
                   </span>
                 </h3>
                 <p className="text-white/70 mb-4">
@@ -823,7 +823,7 @@ error Command failed with exit code 1`}
               size="lg"
               variant="outline"
               className="border-white/20 text-white hover:bg-white/10 bg-black"
-              onClick={() => window.open("https://github.com/arishtiwari/envguard", "_blank")}
+              onClick={() => window.open("https://github.com/ArshTiwari2004/envguard", "_blank")}
             >
               <Github className="mr-2 h-4 w-4" />
               Star on GitHub
@@ -849,7 +849,7 @@ error Command failed with exit code 1`}
 
             <div className="flex items-center gap-4 mt-4 md:mt-0">
               <a
-                href="https://github.com/arishtiwari/envguard"
+                href="https://github.com/ArshTiwari2004"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/50 hover:text-white transition-colors"
