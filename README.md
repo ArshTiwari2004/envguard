@@ -21,7 +21,29 @@
   </a>
 </p>
 
+
 ---
+
+### Install via NPM
+
+
+```bash
+npm install @arshtiwari/envguard
+```
+
+### Add to Project Startup
+
+```bash
+require('envguard'); // Validates env vars on startup
+```
+
+### Or Use CLI
+
+```bash
+npx envguard validate
+```
+
+
 
 ## Features
 
