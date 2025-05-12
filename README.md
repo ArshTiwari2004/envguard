@@ -78,7 +78,7 @@ npx envguard validate
 
 
 
-## Quick Start
+## Installation and setup
 
 ### 1. Install
 
