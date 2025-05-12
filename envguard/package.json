@@ -1,6 +1,7 @@
 {
   "name": "@arshtiwari/envguard",
-  "version": "1.0.1",
+  "version": "1.0.4",
+  "homepage": "https://envguard.vercel.app/",
   "description": "Zero-config environment variable validation toolkit with CLI and UI dashboard",
   "main": "src/index.js",
   "bin": {
@@ -19,7 +20,7 @@
     "cli",
     "nodejs"
   ],
-  "author": "Arsh Tiwari <your.email@example.com>",
+  "author": "Arsh Tiwari <arshtiwari12345@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^5.1.0",
@@ -35,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arishtiwari/envguard"
+    "url": "https://github.com/ArshTiwari2004/envguard"
   },
   "files": [
     "src/",
