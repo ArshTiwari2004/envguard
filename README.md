@@ -199,11 +199,27 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## License
 
-MIT
+MIT © Arsh Tiwari
 
 
+---
 
+## 📬 Contact
 
+Have questions or need help? Feel free to reach out!
+
+- **Email:** [arshtiwari12345@gmail.com](mailto:arshtiwari12345@gmail.com)
+- **GitHub:** [@ArshTiwari2004](https://github.com/ArshTiwari2004)
+- **Twitter/X:** [@ArshTiwari17](https://x.com/ArshTiwari17)
+- **LinkedIn:** [Arsh Tiwari](https://www.linkedin.com/in/arsh-tiwari-072609284/)
+
+For bug reports or feature requests, please [open an issue](https://github.com/ArshTiwari2004/envguard/issues) on GitHub.
+
+---
+
+<p align="center">
+  <i> Happy coding! May your environment variables always be valid. ✨</i>
+</p>
 
 
 
