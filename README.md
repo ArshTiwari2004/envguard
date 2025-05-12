@@ -1,6 +1,25 @@
-# envguard
+<p align="center">
+  <img src="envguard.png" alt="EnvGuard Logo" width="600"/>
+</p>
 
-A zero-config, framework-agnostic NPM package and UI for validating and documenting your environment variables, straight from your `.env.example` file.
+<p align="center">
+  <b>A zero-config, framework-agnostic NPM package and UI for validating and documenting your environment variables, straight from your <code>.env.example</code> file.</b>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@arishtiwari/envguard">
+    <img src="https://img.shields.io/npm/v/@arshtiwari/envguard?style=for-the-badge" alt="NPM Version">
+  </a>
+  <a href="https://www.npmjs.com/package/@arishtiwari/envguard">
+    <img src="https://img.shields.io/npm/dt/@arshtiwari/envguard?style=for-the-badge" alt="Downloads">
+  </a>
+  <a href="https://github.com/ArshTiwari2004/envguard/stargazers">
+    <img src="https://img.shields.io/github/stars/ArshTiwari2004/envguard?style=for-the-badge" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/ArshTiwari2004/envguard/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ArshTiwari2004/envguard?style=for-the-badge" alt="License">
+  </a>
+</p>
 
 ---
 
