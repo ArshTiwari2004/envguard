@@ -6,7 +6,6 @@
   <b>A zero-config, framework-agnostic NPM package and UI for validating and documenting your environment variables, straight from your <code>.env.example</code> file.</b>
 </p>
 
-
 <p align="center">
   <a href="https://www.npmjs.com/package/@arishtiwari/envguard">
     <img src="https://img.shields.io/npm/v/@arshtiwari/envguard?style=for-the-badge" alt="NPM Version">
@@ -20,8 +19,10 @@
   <a href="https://github.com/ArshTiwari2004/envguard/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/ArshTiwari2004/envguard?style=for-the-badge" alt="License">
   </a>
+  <a href="https://github.com/ArshTiwari2004/envguard/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/ArshTiwari2004/envguard/ci.yml?style=for-the-badge" alt="CI Status">
+  </a>
 </p>
-
 
 ---
 
