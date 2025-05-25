@@ -6,6 +6,7 @@
   <b>A zero-config, framework-agnostic NPM package and UI for validating and documenting your environment variables, straight from your <code>.env.example</code> file.</b>
 </p>
 
+
 <p align="center">
   <a href="https://www.npmjs.com/package/@arishtiwari/envguard">
     <img src="https://img.shields.io/npm/v/@arshtiwari/envguard?style=for-the-badge" alt="NPM Version">
@@ -61,6 +62,15 @@ npx envguard validate
 
 
 # 🧰 Tech Stack
+
+
+<div align="center">
+  <img height="40" src="https://skillicons.dev/icons?i=ts,nodejs,react,tailwind,vite,jest,git,github,figma" alt="Tech Stack">
+</div>
+
+--
+
+
 
 | Category        | Technologies                               |
 |----------------|--------------------------------------------|
