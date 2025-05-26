@@ -1,6 +1,6 @@
 {
   "name": "@arshtiwari/envguard",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "homepage": "https://envguard.vercel.app/",
   "description": "Zero-config environment variable validation toolkit with CLI and UI dashboard",
   "main": "src/index.js",
