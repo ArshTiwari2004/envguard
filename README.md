@@ -19,8 +19,10 @@
   <a href="https://github.com/ArshTiwari2004/envguard/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/ArshTiwari2004/envguard?style=for-the-badge" alt="License">
   </a>
+  <a href="https://github.com/ArshTiwari2004/envguard/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/ArshTiwari2004/envguard/ci.yml?style=for-the-badge" alt="CI Status">
+  </a>
 </p>
-
 
 ---
 
@@ -50,17 +52,26 @@ npx envguard validate
 
 ## Features
 
-- **Zero-config:** Works out-of-the-box with your existing `.env.example`
-- **Framework-agnostic:** Use in any Node.js or frontend project
-- **Auto-documentation:** Keeps `.env.example` up-to-date
-- **CLI & Programmatic API:** Validate env vars in scripts, CI, or app startup
-- **React UI:** Visualize, debug, and document env variables (dev only)
-- **Descriptive errors:** Friendly messages for missing/misconfigured variables
+-  **Zero-config** - Works with existing `.env.example`
+-  **Framework-agnostic** - Node.js, Next.js, React, Vue, etc.
+-  **Auto-documentation** - Keep `.env.example` always updated
+-  **Interactive UI** - Visual debugger for environment variables
+-  **Validation** - Catch missing/invalid vars before runtime
+-  **Multiple Integration Methods** - CLI, programmatic, and React UI
 
 ---
 
 
 # 🧰 Tech Stack
+
+
+<div align="center">
+  <img height="40" src="https://skillicons.dev/icons?i=ts,nodejs,react,tailwind,vite,jest,git,github,figma" alt="Tech Stack">
+</div>
+
+--
+
+
 
 | Category        | Technologies                               |
 |----------------|--------------------------------------------|
@@ -83,7 +94,11 @@ npx envguard validate
 ### 1. Install
 
 ```bash
-npm install --save-dev envguard
+npm install --save-dev @arshtiwari/envguard
+# or
+yarn add -D @arshtiwari/envguard
+# or
+pnpm add -D @arshtiwari/envguard
 ```
 ### 2. Validate in CLI
 
@@ -190,6 +205,63 @@ envguard/
 4. **Report** errors in CLI, programmatically, or visually in the UI.
 
 ---
+
+
+
+## File Structure Example
+
+```bash
+project-root/
+├── .env                # Local environment (gitignored)
+├── .env.example        # Template with all required vars
+├── .env.development    # Environment-specific vars
+├── .env.production
+└── package.json
+```
+
+#### Your .env.example should look like:
+
+```bash
+# Required variables
+API_KEY=your_api_key_here
+DATABASE_URL=postgres://user:pass@localhost:5432/db
+
+# Optional variables
+# PORT=3000
+# DEBUG=false
+```
+
+## Advanced Configuration
+
+#### Create envguard.config.js for custom rules:
+
+```bash
+module.exports = {
+  // Custom schema rules
+  rules: {
+    API_KEY: {
+      minLength: 32,
+      pattern: /^sk_[a-zA-Z0-9]+$/
+    }
+  },
+  
+  // Additional environments
+  environments: ['staging', 'test'],
+  
+  // Custom error messages
+  messages: {
+    missing: '🚨 Missing required env var: {var}',
+    invalid: '❌ Invalid value for {var}: {error}'
+  }
+};
+```
+
+
+
+
+
+
+
 
 ## Contributing
 
