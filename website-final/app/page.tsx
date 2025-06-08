@@ -46,6 +46,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import './globals.css'
+
 
 interface Feature {
   icon: React.ReactNode
@@ -153,17 +155,17 @@ DEBUG_MODE=false`
     {
       title: "Documentation",
       icon: <FileJson className="h-6 w-6" />,
-      href: "#docs",
+      href: "https://github.com/ArshTiwari2004/envguard",
     },
     {
       title: "Terminal",
       icon: <Terminal className="h-6 w-6" />,
-      href: "#cli",
+      href: "https://github.com/ArshTiwari2004/envguard",
     },
     {
       title: "Download",
       icon: <Download className="h-6 w-6" />,
-      href: "#install",
+      href: "https://github.com/ArshTiwari2004/envguard",
     },
   ]
 
@@ -172,7 +174,7 @@ DEBUG_MODE=false`
       id: 1,
       name: "Arsh Tiwari",
       designation: "Creator & Maintainer",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/arshtiwari.jpeg",
     },
   ]
 
@@ -225,7 +227,8 @@ DEBUG_MODE=false`
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <span className="cursor-default">
-                      {activeUsers.toLocaleString()} users online
+                      {/* {activeUsers.toLocaleString()} weekly downloads  */}
+                      30+ weekly downloads 
                     </span>
                   </TooltipTrigger>
                   <TooltipContent>
@@ -286,17 +289,17 @@ DEBUG_MODE=false`
                 v1.0.3 • Latest Release
               </Badge>
 
-
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-10 mt-24 leading-tight">
-                {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
+                 {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
                   envguard
                 </span> */}
-                <span className="text-white"> Validate and document your environment variables </span>
-              </h1>
+<div className="text-white mt-24 mb-10 px-6">
+  <h1 className="text-4xl md:text-6xl font-extrabold leading-tight unbounded-regular">
+    Validate and document your{" "}
+    <span className="pacifico-regular">environment variables</span>
+  </h1>
+</div>
 
-             
-
-              <p className="text-xl md:text-2xl text-white/80 mb-6 leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/80 mb-6 leading-relaxed ">
                A zero-config, framework-agnostic NPM package that prevents runtime errors by validating your environment variables directly from your .env.example file.
               </p>
 
@@ -363,14 +366,15 @@ DEBUG_MODE=false`
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
-                  onClick={() => window.open("https://www.npmjs.com/package/@arshtiwari/envguard", "_blank")}
-                >
-                  Get Started
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+<Button
+  size="lg"
+  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 "
+  onClick={() => window.open("https://www.npmjs.com/package/@arshtiwari/envguard", "_blank")}
+>
+  Get Started
+  <ArrowRight className="ml-2 h-4 w-4" />
+</Button>
+
 
                 <Button
                   size="lg"
@@ -467,7 +471,7 @@ DEBUG_MODE=false`
           <MacbookScroll
             title="envguard Dashboard"
             badge="Live Demo"
-            src="/placeholder.svg?height=600&width=1200"
+            src="/npm.png"
             showGradient={false}
           />
         </div>
@@ -856,7 +860,7 @@ error Command failed with exit code 1`}
                 <div className="flex flex-col md:flex-row gap-8 items-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-500 flex-shrink-0">
                     <img
-                      src="/placeholder.svg?height=128&width=128"
+                      src="/arshtiwari.jpeg"
                       alt="Arsh Tiwari"
                       className="w-full h-full object-cover"
                     />
@@ -891,7 +895,7 @@ error Command failed with exit code 1`}
                         {
                           icon: <Globe className="h-4 w-4" />,
                           label: "Portfolio",
-                          href: "https://arsh-tiwari-portfolio.vercel.app/",
+                          href: "https://arsh-portfolio-delta.vercel.app/",
                         },
                         {
                           icon: <Youtube className="h-4 w-4" />,

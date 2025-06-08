@@ -51,12 +51,18 @@ function DockIcon({ mouseX, title, icon, href }: DockItem & { mouseX: any }) {
     <motion.div
       ref={ref}
       style={{ width }}
-      className="aspect-square rounded-full bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors"
+      className="relative aspect-square rounded-full bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors group"
       onClick={() => window.open(href, "_blank")}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
+      {/* Icon */}
       <div className="text-white">{icon}</div>
+
+      {/* Tooltip */}
+      <div className="absolute -top-8 bg-black text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+        {title}
+      </div>
     </motion.div>
   )
 }
