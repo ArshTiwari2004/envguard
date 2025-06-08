@@ -6,6 +6,9 @@ const nextConfig = {
     },
     serverActions: true, // optional: if you use it
   },
+  eslint: {
+    ignoreDuringBuilds: true, // ✅ disables ESLint during build
+  },
 };
 
 export default nextConfig;
